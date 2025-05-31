@@ -59,8 +59,7 @@ public class Task3 {
             System.out.println("Прогноз погоды для Нижнего Новгорода:");
             System.out.println(table.toString());
             
-            String fileName = "result/forecast_" + 
-                new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()) + ".txt";
+            String fileName = "result/forecast.txt";
             
             Files.createDirectories(Paths.get("result"));
             try (BufferedWriter writer = Files.newBufferedWriter(
